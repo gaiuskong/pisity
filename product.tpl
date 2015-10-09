@@ -229,14 +229,22 @@
 			{if isset($HOOK_EXTRA_RIGHT) && $HOOK_EXTRA_RIGHT}{$HOOK_EXTRA_RIGHT}{/if}
 			{if !$content_only}
 				<!-- usefull links-->
-				<ul id="usefull_link_block" class="no-print">
-					{if $HOOK_EXTRA_LEFT}{$HOOK_EXTRA_LEFT}{/if}
-					<li class="print">
-						<a href="javascript:print();" title="{l s='Print'}">
-							{l s='Print'}
-						</a>
-					</li>
-				</ul>
+	      <div class="clearfix">
+	        <ul id="usefull_link_block" class="no-print">
+	          {if $HOOK_EXTRA_LEFT}{$HOOK_EXTRA_LEFT}{/if}
+	          <li class="print">
+	            <a href="javascript:print();" title="{l s='Print'}">
+	              {l s='Print'}
+	            </a>
+	          </li>
+	        </ul>
+	      </div>
+
+	      <div style="margin: 8px 0">
+	        Product Reviews:
+	        <a style="color:#26a69d" href="http://www.amazon.com/s/?field-keywords={$product->name|escape:'html':'UTF-8'}" target="_blank">Search on Amazon</a>
+	      </div>
+
 			{/if}
 		</div>
 		<!-- end center infos-->

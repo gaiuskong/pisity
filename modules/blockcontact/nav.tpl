@@ -24,7 +24,7 @@
 *}
 {if $telnumber}
 	<span class="shop-phone">
-		{l s='Welcome out store' mod='blockcontact'} | <i class="icon-phone"></i> <a href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}" title="{l s='Contact'}" class="icon-account" rel="nofollow">
+		<i class="icon-phone"></i> <a href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}" title="{l s='Contact'}" class="icon-account" rel="nofollow">
 		<span>{l s='Contact'}</span></a> : {$telnumber|escape:'html':'UTF-8'}
 	</span>
 {/if}

@@ -1,0 +1,152 @@
+@import "compass";
+@import "theme_variables";
+
+.wt-prod-filter .type-tab{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+.wt-prod-filter
+{
+ margin-top:20px;
+ .block-content
+ {
+  
+	 .block-title 
+	 {
+	 
+		display: inline-block;
+	  width: 100%;
+	  .icon-wt-bestseller-prod
+	  {
+		 display:none;
+		  
+	  }
+	  h3 
+	   {
+	   margin: 0 0 15px 0;
+	  display: inline-block;
+	  color:$base-text-color;
+	  font-size:24px;font-weight:400;
+	  
+	  }
+	 }
+	
+	}
+}
+.out-prod-filter
+{
+ 
+ border-top:2px solid $border-main;
+ background:$light-background;
+  .product_img_link
+  
+  {
+   margin-bottom:20px;
+  }
+}
+.wt-prod-filter 
+{
+ .owl-carousel .owl-controls .owl-nav
+ {
+   position:static;
+    .owl-next, .owl-prev
+    {
+	  top:35%;padding:0 12px;
+	  
+	 
+    }
+    .owl-prev
+	{
+	  position:absolute;
+	  left:17px;
+	 
+	}
+	.owl-next
+	{
+	   position:absolute;
+	   right:17px;
+	 
+	}
+ }
+}
+.wt-prod-filter
+{
+ 
+ .ajax_block_product
+ {
+  transition: all 0.4s ease 0s;  -moz-transition: all 0.4s ease 0s;-webkit-transition: all 0.4s ease 0s;position:relative;background:$light-background;padding:20px 20px 10px 20px;border-right:$main_border;
+  
+   .comments_note
+  {
+  display:inline-block;
+  }
+  .comments_note{margin-bottom:5px;}
+  
+  .wt-prod-filter-hover {
+			 .button-container
+			  {
+			  text-align:left;
+			  }
+	
+  }
+  
+  
+ }
+}
+@media (min-width: $screen-lg)
+{
+.wt-bestseller-prod  .owl-carousel.owl-loaded
+{
+ height:245px;
+}
+.wt-prod-filter
+{
+ .ajax_block_product
+ {
+  
+.wt-prod-filter-hover {
+           display:none;opacity:0;z-index:99;
+			  filter: alpha(opacity=0);
+	
+    }
+	&.hovered 
+                           {
+						   border:$main_border;
+	          .wt-prod-filter-hover {display:block; opacity:1;
+			  filter: alpha(opacity=100);}
+              }
+			  
+	
+  }
+}
+}
+
+/****prod-filter-topcolumn***/
+@media (min-width: $screen-sm) and (max-width: $screen-md-max) 
+ {
+		.wt-prod-filter-topcolumn
+		{
+		.block-content
+		 {
+		   border:none;
+			
+			 .product-container
+			 {
+			  
+			   width:50%;
+			   float:left;border:$main_border; 
+			   &:first-child 
+			   {
+				 border:$main_border; 
+			   }
+			  }
+			 }
+			
+		 }
+}

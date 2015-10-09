@@ -1,0 +1,124 @@
+@import "compass";
+@import "theme_variables";
+/* BLOCK #reinsurance_block ******************************************************************** */
+.manu-bar
+{
+float:left;
+width:100%;
+border-bottom:2px solid #ff8500;
+}
+@media (min-width: $screen-sm) 
+{
+.wt-block-manu .owl-carousel .owl-controls .owl-nav
+{
+right:20px;
+}
+}
+.wt-block-manu
+{
+ margin-top:40px;
+ .top-brand
+ {
+ 
+   .icon-brand
+   {
+     display:none;
+	
+   }
+  
+ }
+  .best-brand
+   {
+   
+	
+  }
+   h3 
+    {
+	  margin:0;
+	  display:inline-block;
+	  color:$base-text-color;
+	  font-size:22px;font-weight:400;
+	  margin-bottom:15px;
+	  @media (min-width: $screen-sm ) and (max-width: $screen-sm-max ) 
+	  {
+	  font-size:15px;
+	  }
+   }
+   @media (min-width: $screen-sm ) and (max-width: $screen-md-max)  
+   {
+   .manu-content
+       {display:inline-block;width:100%;background:#f6f6f6;}
+   
+   }
+}
+#ul_manu
+{
+border-bottom:$main_border;min-height:270px;
+   @media (min-width: $screen-sm ) and (max-width: $screen-md-max)  
+	  {
+	  border-bottom:none;
+	  }
+}
+.list_manu
+{
+position:relative;
+
+ .owl-carousel .owl-controls .owl-nav .owl-prev, .owl-carousel .owl-controls .owl-nav .owl-next
+	 {
+	  &:before
+	   {
+	     color:$light-text-color;
+	   }
+	   &:hover{background:#8d0117;}
+	 }
+	 
+	 img:hover  {
+		 opacity: 0.7;
+         filter: alpha(opacity=70);
+		} 
+}
+.wt-block-manu .banner-content
+{
+ position: relative;
+ &:before 
+ {
+ background-color: rgba(255, 255, 255, 0.15);
+    content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+ }
+ &:after 
+ {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+ }
+  &:hover:before
+   {
+   right: 50%;
+  left: 50%;
+  background: rgba(255,255,255,0.2);
+  }
+  &:hover:after 
+   {
+   top: 50%;
+  bottom: 50%;
+  background: rgba(255,255,255,0.2);
+  }
+}

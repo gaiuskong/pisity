@@ -1,0 +1,75 @@
+.wt-block-banner {
+  margin-top: 20px; }
+  .wt-block-banner .item {
+    padding: 0 15px;
+    float: left; }
+    .wt-block-banner .item .banner-content {
+      position: relative; }
+      .wt-block-banner .item .banner-content .mask {
+        position: absolute;
+        top: 22%;
+        left: 0;
+        color: #fff;
+        width: 100%;
+        text-align: center; }
+        @media (max-width: 767px) {
+          .wt-block-banner .item .banner-content .mask {
+            display: none; } }
+        .wt-block-banner .item .banner-content .mask .content-mask .banner-img {
+          display: block;
+          text-align: center; }
+        .wt-block-banner .item .banner-content .mask .content-mask p {
+          max-width: 550px;
+          margin-top: 15px;
+          line-height: 22px;
+          font-size: 17px;
+          display: inline-block;
+          font-weight: 400;
+          clear: both; }
+          @media (min-width: 768px) and (max-width: 1199px) {
+            .wt-block-banner .item .banner-content .mask .content-mask p {
+              display: none; } }
+      .wt-block-banner .item .banner-content > a {
+        display: block;
+        overflow: hidden;
+        position: relative; }
+        .wt-block-banner .item .banner-content > a img {
+          position: relative;
+          z-index: 0;
+          margin: 0 auto;
+          transform: scale(1);
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -webkit-transition: all 1s ease;
+          -moz-transition: all 1s ease;
+          -ms-transition: all 1s ease;
+          -o-transition: all 1s ease;
+          transition: all 1s ease;
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          -ms-backface-visibility: hidden; }
+        .wt-block-banner .item .banner-content > a:hover img {
+          transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1); }
+
+.wt-block-banner .container {
+  padding-left: 0;
+  padding-right: 0; }
+
+@media (max-width: 767px) {
+  #wt_manu_left, .banner-right {
+    text-align: center;
+    border: 1px solid #d6d6d6;
+    padding: 10px; }
+
+  #ul_manu {
+    border: 1px solid #d6d6d6;
+    border-bottom: none;
+    border-top: none; }
+
+  #wt_banner_content li {
+    margin-bottom: 10px;
+    text-align: center; } }
+
+/*# sourceMappingURL=wtbanner.css.map */

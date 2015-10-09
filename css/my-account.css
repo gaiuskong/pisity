@@ -1,0 +1,49 @@
+.myaccount-link-list {
+  padding: 20px;
+  background: #fff; }
+
+#my-account .addresses-lists {
+  margin-bottom: 30px; }
+#my-account ul.myaccount-link-list li {
+  overflow: hidden;
+  padding: 10px;
+  background: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  position: relative; }
+  #my-account ul.myaccount-link-list li a {
+    display: block;
+    overflow: hidden;
+    font: 400 14px Droid Sans, Helvetica, sans-serif;
+    color: #666;
+    text-transform: uppercase;
+    text-decoration: none; }
+    #my-account ul.myaccount-link-list li a i {
+      font-size: 22px;
+      text-align: center;
+      float: left;
+      margin-right: 20px; }
+    #my-account ul.myaccount-link-list li a span {
+      overflow: hidden;
+      display: block;
+      margin-top: 2px; }
+  #my-account ul.myaccount-link-list li:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 12px;
+    height: 12px; }
+  #my-account ul.myaccount-link-list li:hover {
+    filter: none;
+    background: #26a69d; }
+    #my-account ul.myaccount-link-list li:hover a {
+      color: #fff; }
+    #my-account ul.myaccount-link-list li:hover:after {
+      background: #fff url("../img/tab.png") no-repeat; }
+
+#my-account ul.myaccount-link-list li.lnk_wishlist {
+  margin-bottom: 0; }
+
+/*# sourceMappingURL=my-account.css.map */
